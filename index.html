@@ -14,7 +14,7 @@
   <body>
     <header>
       <div
-        class="bg-[#F9F6E2] lg:px-16 justify-between gap-8 hero-content flex-col lg:flex-row-reverse"
+        class="bg-[#F9F6E2] px-5 lg:px-16 justify-between gap-8 hero-content flex-col md:flex-row-reverse"
       >
         <img src="./images/Summer 1.png" class="w-[50%]" alt="summer" />
         <div class="text-center">
@@ -33,14 +33,14 @@
         </div>
       </div>
     </header>
-    <main class="lg:p-16 bg-[#F8F8F8]">
+    <main class="p-5 lg:p-16 bg-[#F8F8F8]">
       <div class="flex flex-col md:flex-row gap-2">
         <!-- Kitchenware  -->
         <div class="">
           <h2 class="text-[#111] font-bold text-3xl mb-3">Kitchenware</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <!-- Card 1 -->
-            <div
+            <div id="card-1" onclick="calculate('p-Name1', 'price1')"
               class="card bg-[#FFF] shadow-xl p-5 gap-2 items-center rounded-lg"
             >
               <figure class="bg-[#1111110D] w-full rounded-lg">
@@ -75,13 +75,13 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h2 class="card-title text-xl">K. Accessories</h2>
+                <h2 id="p-Name1" class="card-title text-xl">K. Accessories</h2>
 
-                <p class="text-xl text-[#1111118f]"><span>39.00</span>TK</p>
+                <p class="text-xl text-[#1111118f]"><span id="price1">39.00</span>TK</p>
               </div>
             </div>
             <!-- Card 2 -->
-            <div
+            <div onclick="calculate('p-name2', 'price2')"
               class="card bg-[#FFF] shadow-xl p-5 gap-2 items-center rounded-lg"
             >
               <figure class="bg-[#1111110D] w-full rounded-lg">
@@ -116,13 +116,13 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h2 class="card-title text-xl">K. Accessories</h2>
+                <h2 id="p-name2" class="card-title text-xl">Ruti Maker</h2>
 
-                <p class="text-xl text-[#1111118f]"><span>25.00</span>TK</p>
+                <p class="text-xl text-[#1111118f]"><span id="price2">25.00</span>TK</p>
               </div>
             </div>
             <!-- Card 3 -->
-            <div
+            <div onclick="calculate('p-name3', 'price3')"
               class="card bg-[#FFF] shadow-xl p-5 gap-2 items-center rounded-lg"
             >
               <figure class="bg-[#1111110D] w-full rounded-lg">
@@ -157,17 +157,17 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h2 class="card-title text-xl">K. Accessories</h2>
+                <h2 id="p-name3" class="card-title text-xl">Home Cooker</h2>
 
-                <p class="text-xl text-[#1111118f]"><span>49.00</span>TK</p>
+                <p class="text-xl text-[#1111118f]"><span id="price3">49.00</span>TK</p>
               </div>
             </div>
           </div>
 
           <h2 class="text-[#111] font-bold text-3xl mt-8 mb-3">Sportswear</h2>
-          <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             <!-- Card 4 -->
-            <div
+            <div onclick="calculate('p-name4', 'price4')"
               class="card bg-[#FFF] shadow-xl p-5 gap-2 items-center rounded-lg"
             >
               <figure class="bg-[#1111110D] w-full rounded-lg px-10 py-5">
@@ -202,13 +202,13 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h2 class="card-title text-xl">Sports Back Cap</h2>
+                <h2 id="p-name4" class="card-title text-xl">Sports Back Cap</h2>
 
-                <p class="text-xl text-[#1111118f]"><span>49.00</span>TK</p>
+                <p class="text-xl text-[#1111118f]"><span id="price4">49.00</span>TK</p>
               </div>
             </div>
             <!-- Card 5 -->
-            <div
+            <div onclick="calculate('p-name5', 'price5')"
               class="card bg-[#FFF] shadow-xl p-5 gap-2 items-center rounded-lg"
             >
               <figure class="bg-[#1111110D] w-full rounded-lg px-10">
@@ -243,13 +243,13 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h2 class="card-title text-xl">Full Jersey Set</h2>
+                <h2 id="p-name5" class="card-title text-xl">Full Jersey Set</h2>
 
-                <p class="text-xl text-[#1111118f]"><span>69.00</span>TK</p>
+                <p class="text-xl text-[#1111118f]"><span id="price5">69.00</span>TK</p>
               </div>
             </div>
             <!-- Card 6 -->
-            <div
+            <div onclick="calculate('p-name6', 'price6')"
               class="card bg-[#FFF] shadow-xl p-5 gap-2 items-center rounded-lg"
             >
               <figure class="bg-[#1111110D] w-full rounded-lg px-10 py-1">
@@ -284,24 +284,24 @@
                     class="mask mask-star-2 bg-orange-400"
                   />
                 </div>
-                <h2 class="card-title text-xl">Sports cates</h2>
+                <h2 id="p-name6" class="card-title text-xl">Sports cates</h2>
 
-                <p class="text-xl text-[#1111118f]"><span>159.00</span>TK</p>
+                <p class="text-xl text-[#1111118f]"><span id="price6">159.00</span>TK</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- area calculator -->
-        <div class="flex-1 mt-[50px]">
-          <div class="p-4 mb-4 bg-[#FFF] rounded-lg">
+        <!-- calc -->
+        <div class="lg:flex-1 mt-[50px]">
+          <div class="p-4 mb-4 bg-[#FFF] rounded-lg space-y-3">
             <p class="text-xl font-medium text-[#111]">Have coupon?</p>
             <p class="flex">
-              <input
+              <input id="coupon"
                 type="text"
                 class="px-3 py-2 rounded-lg w-36 border-2 border-[#11111131]"
                 placeholder="Coupon code"
               />
-              <button
+              <button id="applyButton"
                 class="bg-[#E527B2] px-4 py-2 text-white rounded-lg"
                 disabled
               >
@@ -310,27 +310,29 @@
             </p>
           </div>
           <div class="p-4 mb-4 bg-[#FFF] rounded-lg">
-            <div id="item-name" class="text-lg font-medium"></div>
+            <div id="item-name" class="text-lg font-medium">
+
+            </div>
             <div class="my-3 border-y-2 border-[#1111113e]">
               <p class="text-lg font-medium text-[#111]">
                 Total price:
-                <span id="totalPrice" class="text-[#1111118f]">0.00 </span
+                <span id="totalPrice" class="text-[#1111118f]">00.00 </span
                 ><span class="text-[#1111118f]">TK</span>
               </p>
               <p class="text-lg font-medium text-[#111]">
                 Discount:
-                <span id="discountMoney" class="text-[#1111118f]">0.00 </span
+                <span id="discountMoney"  class="text-[#1111118f]">00.00 </span
                 ><span class="text-[#1111118f]">TK</span>
               </p>
               <p class="text-lg font-medium text-[#111]">
                 Total:
                 <span id="priceAfterDiscount" class="text-[#1111118f]"
-                  >0.00 </span
+                  >00.00 </span
                 ><span class="text-[#1111118f]">TK</span>
               </p>
             </div>
             <div class="relative -bottom-8 flex justify-center">
-              <button
+              <button id="purchaseButton"
                 onclick="my_modal_1.showModal()"
                 class="w-[80%] py-2 bg-[#E527B2] rounded-lg text-white font-semibold text-lg mx-auto"
                 disabled
@@ -345,7 +347,7 @@
                     Your Purchase the product
                   </p>
                   <div class="modal-action justify-center">
-                    <button
+                    <button onclick="congo()"
                       class="py-2 px-4 bg-[#E527B2] rounded-lg text-white"
                     >
                       Go Home
