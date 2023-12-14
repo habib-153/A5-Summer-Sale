@@ -66,8 +66,10 @@ function congo(){
     const DiscountGiven = document.getElementById("discountMoney");
     const AmountWithDiscount = document.getElementById("priceAfterDiscount");
     const Entry = document.getElementById("item-name");
+    const CouponCode = document.getElementById("coupon");
     CostWithoutDiscount.innerText = '00.00 ';
     DiscountGiven.innerText = '00.00 ';
     AmountWithDiscount.innerText = '00.00 ';
     Entry.innerText = '';
+    CouponCode.value = '';
 }
